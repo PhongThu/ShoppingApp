@@ -45,7 +45,7 @@ public class LoaispAdapter extends BaseAdapter {
         ViewHolder viewHolder = null;
         if (view == null){
             viewHolder = new ViewHolder();
-            LayoutInflater inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(R.layout.donglistview,null);
             viewHolder.txttenloaisp = view.findViewById(R.id.textviewloaisp);
             viewHolder.imgloaisp = view.findViewById(R.id.imageviewloaisp);

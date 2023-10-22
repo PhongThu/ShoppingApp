@@ -44,11 +44,9 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("com.android.volley:volley:1.2.1")
     implementation ("androidx.cardview:cardview:1.0.0")
-    implementation ("com.androidx.support:design:28.0.0")
+ 
     implementation ("com.google.android.gms:play-services-maps:18.2.0")
     implementation ("androidx.recyclerview:recyclerview:1.4.0-alpha01")
-    implementation ("com.androidx.support:recyclerview-v7:28.0.0")
-    implementation ("com.squareup.picasso:picasso:2.8")
-    implementation ("com.github.bumptech.glide:glide:4.16.0")
 
+    implementation ("com.squareup.picasso:picasso:2.8")
 }

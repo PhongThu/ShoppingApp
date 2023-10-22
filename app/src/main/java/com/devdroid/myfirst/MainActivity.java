@@ -9,16 +9,18 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ViewFlipper;
 
-import com.devdroid.myfirst.adapter.LoaispAdapter;
+//import com.devdroid.myfirst.adapter.LoaispAdapter;
 import com.devdroid.myfirst.model.Loaisp;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
-import com.squareup.picasso.Picasso
+import com.squareup.picasso.Picasso;
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     ListView listViewmanhinhchinh;
     DrawerLayout drawerLayout;
     ArrayList<Loaisp> mangloaisp;
-    LoaispAdapter loaispAdapter;
+    //LoaispAdapter loaispAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,11 +45,18 @@ public class MainActivity extends AppCompatActivity {
         quangcao.add("https://photo2.tinhte.vn/data/attachment-files/2023/04/6406368_cover-trai-nghiem-san-pham-moi-hp-tinhte.jpg");
         quangcao.add("https://thoibaonganhang.vn/stores/news_dataimages/minhvl/122019/18/10/3449_4855479_nintendo-switch-tinhte-12.jpg");
 
-        for (int i=0; i< quangcao.size();i++){
-            Picasso.get().load(quangcao[i])
-        }
+        //for (int i=0; i< quangcao.size();i++){
+            ImageView imageView = new ImageView(getApplicationContext());
+            Picasso.get().load("https://photo2.tinhte.vn/data/attachment-files/2023/04/6406368_cover-trai-nghiem-san-pham-moi-hp-tinhte.jpg").into(imageView);
+            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+            viewFlipper.addView(imageView);
+        //}
         viewFlipper.setFlipInterval(5000);
         viewFlipper.setAutoStart(true);
+        Animation animation_slide_in = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.slide_in_right);
+        Animation animation_slide_out = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.slide_out_right);
+        viewFlipper.setInAnimation(animation_slide_in);
+        viewFlipper.setOutAnimation(animation_slide_out);
     }
 
     private void ActionBar(){
@@ -68,8 +77,8 @@ public class MainActivity extends AppCompatActivity {
         navigationView = (NavigationView) findViewById(R.id.navigationview);
         listViewmanhinhchinh = findViewById(R.id.listmanhinhchinh);
         drawerLayout = findViewById(R.id.drawerlayout);
-        mangloaisp = new ArrayList<>();
+        /*mangloaisp = new ArrayList<>();
         loaispAdapter= new LoaispAdapter(mangloaisp,getApplicationContext());
-        listViewmanhinhchinh.setAdapter(loaispAdapter);
+        listViewmanhinhchinh.setAdapter(loaispAdapter);*/
     }
 }
