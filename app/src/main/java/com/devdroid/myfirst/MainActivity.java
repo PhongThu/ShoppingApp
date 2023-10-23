@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             imageView.setScaleType(ImageView.ScaleType.FIT_XY);
             viewFlipper.addView(imageView);
         //}
-        viewFlipper.setFlipInterval(5000);
+        viewFlipper.setFlipInterval(4000);
         viewFlipper.setAutoStart(true);
         Animation animation_slide_in = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.slide_in_right);
         Animation animation_slide_out = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.slide_out_right);
