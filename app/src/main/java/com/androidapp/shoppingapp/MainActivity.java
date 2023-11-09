@@ -3,6 +3,7 @@ package com.androidapp.shoppingapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Handler;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,5 +11,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            //Check kiểm tra đã đăng nhập thẳng vào home
+            public void run() {
+                startActivities(MainActivity.this, );
+            }
+        });
     }
 }
