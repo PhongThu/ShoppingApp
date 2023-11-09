@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             //Check kiểm tra đã đăng nhập thẳng vào home
             public void run() {
-                startActivities(MainActivity.this, );
+                startActivities(MainActivity.this, ); // dang con thieu code
             }
         });
     }
