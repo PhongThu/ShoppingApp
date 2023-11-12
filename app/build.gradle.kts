@@ -41,25 +41,13 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    //glider
-//    implementation 'com.github.bumptech.glide:glide:4.13.0'
-//    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
-//    //RxJava
-//    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
-//    implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
-//
     // Retrofit
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation ("com.github.akarnokd:rxjava3-retrofit-adapter:3.0.0")
-//
-//    //brande
-//    implementation 'com.nex3z:notification-badge:1.0.4'
-//
-//    //evenbus
-//    implementation("org.greenrobot:eventbus:3.3.1")
-//    //Paper
-//    implementation 'io.github.pilgr:paperdb:2.7.2'
-//    //Gson
-//    implementation 'com.google.code.gson:gson:2.9.0'
+
+    implementation ("com.squareup.picasso:picasso:2.8") // Picasso xử lý các ImageView trong adapter
+
+    implementation ("de.hdodenhof:circleimageview:3.1.0") // thong tin ca nhan
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
 }
