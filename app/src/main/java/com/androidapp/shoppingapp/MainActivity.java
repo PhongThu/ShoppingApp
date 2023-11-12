@@ -2,8 +2,11 @@ package com.androidapp.shoppingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.androidapp.shoppingapp.Account.SignUpActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,11 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
         new Handler().postDelayed(new Runnable() {
             @Override
-            //Check kiểm tra đã đăng nhập thẳng vào home
             public void run() {
-                startActivities(MainActivity.this, );
-                // test git
+                startActivity(new Intent(MainActivity.this, SignUpActivity.class));
             }
-        });
+        }, 3500);
     }
 }
