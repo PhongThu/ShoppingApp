@@ -41,11 +41,11 @@
             android:name=".View.Admin.AdminSignInActivity"
             android:exported="false" />
         <activity
-            android:name=".Account.SignUpActivity"
+            android:name=".View.Account.SignUpActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Account.SignInActivity"
+            android:name=".View.Account.SignInActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

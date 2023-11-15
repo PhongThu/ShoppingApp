@@ -2,7 +2,7 @@ package com.androidapp.shoppingapp.Models;
 
 import java.util.List;
 
-public class User_model {
+public class UserModel {
     boolean success;
     String message;
     List<User> result;
