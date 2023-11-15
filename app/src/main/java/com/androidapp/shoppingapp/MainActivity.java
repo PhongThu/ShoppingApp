@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.androidapp.shoppingapp.Account.SignUpActivity;
+import com.androidapp.shoppingapp.View.Account.SignUpActivity;
 
 public class MainActivity extends AppCompatActivity {
 

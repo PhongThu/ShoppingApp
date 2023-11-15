@@ -20,61 +20,77 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="440dp"
+            android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:background="@android:color/background_light"
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:layout_margin="15dp">
-
-                <EditText
-                    android:id="@+id/editEmail"
-                    android:hint="Nhập Email"
-                    android:singleLine="true"
-                    android:drawableRight="@drawable/ic_baseline_email_24"
-                    android:background="@drawable/button"
-                    android:layout_width="match_parent"
-                    android:layout_height="65dp"/>
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:background="@android:color/background_light"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:layout_margin="15dp"
+                android:background="@android:color/background_light">
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/button"
+                    android:drawableRight="@drawable/ic_baseline_email_24"
+                    android:hint="Nhập Email"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_margin="15dp"
+                android:background="@android:color/background_light">
+
+                <EditText
+                    android:id="@+id/editPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/button"
+                    android:drawableRight="@drawable/ic_baseline_phone"
+                    android:hint="Nhập Số Điện Thoại"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_margin="15dp"
+                android:background="@android:color/background_light"
 
                 app:passwordToggleEnabled="true">
 
                 <EditText
                     android:id="@+id/editPassword"
-                    android:hint="Nhập Mật Khẩu"
-                    android:singleLine="true"
-                    android:inputType="textPassword"
-
-                    android:background="@drawable/button"
                     android:layout_width="match_parent"
-                    android:layout_height="65dp" />
+                    android:layout_height="65dp"
+                    android:background="@drawable/button"
+
+                    android:hint="Nhập Mật Khẩu"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:background="@android:color/background_light"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:layout_margin="15dp"
+                android:background="@android:color/background_light"
 
                 app:passwordToggleEnabled="true">
 
                 <EditText
                     android:id="@+id/editPassword_repeat"
-                    android:hint="Nhập Lại Mật Khẩu"
-                    android:singleLine="true"
-                    android:inputType="textPassword"
-                    android:background="@drawable/button"
                     android:layout_width="match_parent"
-                    android:layout_height="65dp" />
+                    android:layout_height="65dp"
+                    android:background="@drawable/button"
+                    android:hint="Nhập Lại Mật Khẩu"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
@@ -82,20 +98,20 @@
                 android:layout_width="200dp"
                 android:layout_height="55dp"
                 android:layout_gravity="center"
-                android:elevation="8dp"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/button"
                 android:backgroundTint="@color/black"
+                android:elevation="8dp"
                 android:onClick="callRegisterFromLogin"
-                android:textColor="@color/black"
-                android:text="Đăng Ký" />
+                android:text="Đăng Ký"
+                android:textColor="@color/black" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="0dp" />
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
     <TextView
         android:id="@+id/txtSignin_repeat"
