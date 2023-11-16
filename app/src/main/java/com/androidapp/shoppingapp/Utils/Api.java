@@ -23,7 +23,7 @@ public interface Api {
     @FormUrlEncoded
     Observable<UserModel> signIn(
             @Field("email") String email,
-            @Field("pass") String pass
+            @Field("password") String password
     );
 
 
