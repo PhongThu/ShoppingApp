@@ -1,6 +1,6 @@
-package com.androidapp.shoppingapp.Ultils;
+package com.androidapp.shoppingapp.Utils;
 
-import android.database.Observable;
+import io.reactivex.rxjava3.core.Observable;
 
 import com.androidapp.shoppingapp.Models.UserModel;
 
@@ -14,9 +14,8 @@ public interface Api {
     @FormUrlEncoded
     Observable<UserModel> signUp(
             @Field("email") String email,
-            @Field ("pass") String pass,
-            @Field ("username") String username,
-            @Field ("mobile") String mobile
+            @Field ("password") String password,
+            @Field ("phone") String phone
 
     );
 
