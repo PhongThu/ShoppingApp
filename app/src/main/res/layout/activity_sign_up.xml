@@ -53,6 +53,7 @@
                     android:background="@drawable/button"
                     android:drawableRight="@drawable/ic_baseline_phone"
                     android:hint="Nhập Số Điện Thoại"
+                    android:inputType="number"
                     android:singleLine="true" />
             </com.google.android.material.textfield.TextInputLayout>
 

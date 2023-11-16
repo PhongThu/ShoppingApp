@@ -1,4 +1,4 @@
-package com.androidapp.shoppingapp.Ultils;
+package com.androidapp.shoppingapp.Utils;
 import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
