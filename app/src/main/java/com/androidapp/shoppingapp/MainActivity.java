@@ -21,6 +21,6 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 startActivity(new Intent(MainActivity.this, SignInActivity.class));
             }
-        }, 3500);
+        }, 35000);
     }
 }
